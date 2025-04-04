@@ -1,0 +1,95 @@
+
+ .sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul li:hover {
+  background: #334155;
+}
+
+.logout-btn {
+  background: #dc2626;
+  text-align: center;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.logout-btn:hover {
+  background: #b91c1c;
+}
+
+/* Ensure the main content shifts correctly */
+.main-content {
+  margin-left: 260px; /* Increased margin slightly to prevent overlap */
+  padding: 20px;
+  width: calc(100% - 260px); /* Adjust width to fit within the remaining space */
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/* When there is no sidebar (e.g., login pages) */
+.no-sidebar {
+  margin-left: 0;
+  width: 100%;
+}
+
+/* Ensure table and other elements do not get hidden */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Prevents horizontal overflow */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Make sure the add security button is aligned correctly */
+.add-security-btn {
+  margin-left: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+}

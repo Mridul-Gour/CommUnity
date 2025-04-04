@@ -1,0 +1,69 @@
+
+
+   .apartment_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: ghostwhite;
+  }
+ 
+ 
+  .apartment_details {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .apartment_details h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    border: none;
+    background: grey;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buttons .active {
+    background: #007bff;
+    color: white;
+  }
+  
+  .grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+  }
+  
+  .card h3 {
+    margin-bottom: 5px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: gray;
+  }
+  

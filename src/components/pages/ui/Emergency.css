@@ -1,0 +1,126 @@
+
+.emergency-page {
+  display: flex;
+  flex-grow: 1;
+  padding: 10px;
+  margin-left: 270px;
+}
+
+
+.emergency-container {
+  flex-grow: 1;
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Button group */
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.filter-btn, .add-btn {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filter-btn {
+  background-color: #f5f5f5;
+  color: black;
+  transition: 0.3s;
+}
+
+.filter-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.filter-btn:hover {
+  background-color: #dcdcdc;
+}
+
+.add-btn {
+  background-color: #007bff;
+  color: white;
+  margin-left: auto;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f8f8f8;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+
+.modal input, .modal select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cancel-btn {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}

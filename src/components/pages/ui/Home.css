@@ -1,0 +1,70 @@
+
+.home-contain {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 270px; 
+    width: calc(100% - 290px);
+    
+}
+
+.profile-icon {
+    position: absolute;
+    top: 20px;
+    left: 90%;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    background-color:lightcyan;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    margin: 5px 0;
+    border-radius: 8px;
+    width: 30%; 
+    max-width: 400px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.stat-block {
+    background:lightgreen;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.closebtn{
+    background-color: red;
+    height: 30px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,143 @@
+
+.parking-container {
+    padding: 20px;
+    margin-left: 270px; 
+    width: calc(100% - 290px); 
+  }
+  
+  
+  .parking-stats {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+  }
+  
+  .stat-box {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    min-width: 150px;
+  }
+  
+  .total {
+    background-color: lightblue;
+  }
+  
+  .occupied {
+    background-color: lightcoral;
+  }
+  
+  .unoccupied {
+    background-color: lightgreen;
+  }
+  
+
+  .filter-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; 
+  }
+  
+  .filter-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #f5f5f5;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .filter-buttons .active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .add-parking-btn {
+    background-color: #007bff;
+    color: blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    display: inline-block;
+  
+  }
+  
+  .add-parking-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Parking Table */
+  .parking-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .parking-table th,
+  .parking-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  /* Modal Styling */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+  .modal input {
+    width: 100%;
+    margin: 15px 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+ 
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 10px;
+  }
+  
+  .modal-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .cancel-btn {
+    background-color: red;
+    color: white;
+  }
+  
