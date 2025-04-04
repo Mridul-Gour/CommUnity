@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -23,5 +22,3 @@ Modules Implemented:
 3.	Event and Notice Management
 4.	Complaint and Service Request Management
 5.	Maintenance Payment System
-
->>>>>>> 9e4e1982aec90e13f670584291c32978c59b273b
