@@ -1,0 +1,224 @@
+/* General App Layout */
+.app {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  height: calc(100vh - 60px);
+  width: 250px;
+  background-color: rgb(66, 141, 207);
+  padding-top: 20px;
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.SidebarList {
+  padding: 0;
+  margin: 0;
+}
+
+.SidebarList .row {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid black;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.SidebarList .row:hover {
+  background-color: rgb(101, 125, 231);
+}
+
+.SidebarList #active {
+  background-color: darkblue;
+}
+
+.row .icon {
+  flex: 30%;
+  text-align: center;
+}
+
+.row .title {
+  flex: 70%;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align events from the top */
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  margin-left: 250px; /* Push content to the right to avoid overlapping sidebar */
+  margin-top: 80px; /* Ensure it doesn't overlap top bar */
+  width: calc(100vw - 250px);
+}
+
+/* Event Card */
+.event-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%; /* Adjust width to make it more responsive */
+  max-width: 450px; /* Set a max width */
+  text-align: center;
+  margin-bottom: 20px; /* Space between event cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Event Image */
+.event-card img.event-img {
+  max-width: 100%; /* Ensure image does not exceed card width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Prevent overly tall images */
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Event Card Text */
+.event-card h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  color: #555;
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+/* Button */
+.learn-more {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.learn-more:hover {
+  background-color: #316ac5;
+}
+
+/* Top Bar Styling */
+/* Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  z-index: 1000;
+}
+
+/* User Info */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust spacing between elements */
+  cursor: pointer;
+  margin-right: 20px; /* Ensure it's not too far right */
+}
+
+/* User Icon */
+.user-icon {
+  font-size: 28px; /* Adjust icon size */
+  margin-left: 5px; /* Reduce spacing from text */
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+  position: absolute;
+  right: 10px; /* Adjusted so it stays close to the icon */
+  top: 60px;
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+}
+
+/* Ensure responsive design */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 200px;
+  }
+
+  .main-content {
+      margin-left: 200px;
+      width: calc(100vw - 200px);
+  }
+
+  .event-card {
+      width: 95%;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+      display: none; /* Hide sidebar on small screens */
+  }
+
+  .main-content {
+      margin-left: 0;
+      width: 100%;
+      padding: 10px;
+  }
+}
+
+.rating-container {
+  margin-top: 10px;
+}
+
+.star {
+  font-size: 24px;
+  cursor: pointer;
+  color: gray;
+}
+
+.star.selected {
+  color: gold;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+

@@ -1,0 +1,85 @@
+/* Main Container */
+.mainn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Smooth background */
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Buttons Container */
+.btnn {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Toggle Buttons */
+.btnn button {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+/* Active Button */
+.btnn .active {
+    background-color: white;
+    color: #1e3c72;
+    font-weight: bold;
+}
+
+/* Blocks Container */
+.blocks {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Individual Apartment Blocks */
+.Ablock, .Bblock {
+    height: 250px;
+    width: 320px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent effect */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* Frosted Glass Effect */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+}
+
+/* Hover Effect */
+.Ablock:hover, .Bblock:hover {
+    transform: scale(1.05);
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .blocks {
+        flex-direction: column;
+    }
+
+    .Ablock, .Bblock {
+        width: 90%;
+    }
+}

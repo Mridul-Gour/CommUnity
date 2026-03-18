@@ -1,0 +1,140 @@
+/* Main Container */
+.notices-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(to bottom right, #f0f4f8, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Create Notice Button */
+.create_notice {
+  background: linear-gradient(to right, #4a90e2, #357abd);
+  color: white;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(53, 122, 189, 0.3);
+}
+
+.create_notice:hover {
+  background: #2e6cbf;
+  transform: scale(1.05);
+}
+
+/* Input Area Box */
+.notice-input-box {
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Textarea Style */
+.notice-textarea {
+  width: 90%;
+  min-height: 130px;
+  padding: 14px;
+  font-size: 15px;
+  border: 1.5px solid #4a90e2;
+  border-radius: 8px;
+  resize: vertical;
+  transition: border 0.3s ease;
+}
+
+.notice-textarea:focus {
+  outline: none;
+  border-color: #2e6cbf;
+}
+
+/* Add Notice Button */
+.add-notice-btn {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);
+}
+
+.add-notice-btn:hover {
+  background-color: #2e6cbf;
+  transform: scale(1.05);
+}
+
+/* Notices List */
+.notices-list {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Single Notice Card */
+.notice-item {
+  background: #ffffff;
+  padding: 18px 20px;
+  border-left: 5px solid #4a90e2;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.notice-item:hover {
+  background-color: #eef5ff;
+  transform: translateX(6px);
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.delete-notice-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  float: right;
+  transition: background 0.3s ease-in-out;
+}
+
+.delete-notice-btn:hover {
+  background-color: #c0392b;
+}
+
+.notice-text {
+  white-space: pre-wrap;
+}
+

@@ -1,0 +1,68 @@
+.login_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 70px;
+    color: rgb(33, 30, 190);
+}
+
+.login_image img{
+    width: 800px;
+    height: 600px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_form img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.login_form h3{
+    columns: blue;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.login_form input{
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.login_form label{
+    margin-bottom: 10px;
+}
+
+.login_form button{
+    padding: 10px 25px;
+    margin-top: 25px;
+    background-color: rgb(22, 89, 214);
+    color: wheat;
+    border: none;
+    border-radius: 10px ;
+    font-size: 15px;
+
+    
+}
+
+.login_form button:hover{
+    background-color: rgb(148, 153, 223);
+}
+
+.login_form .error {
+    color: red; /* Make the error messages red */
+    font-size: 12px; /* Smaller font size for the errors */
+    margin-bottom: 10px; /* Add some space below the error messages */
+}

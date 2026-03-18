@@ -1,0 +1,80 @@
+.request-container {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  h2, h3 {
+    color: rgb(45, 102, 104);
+  }
+  
+  /* Service Buttons */
+  .service-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    color: aliceblue;
+    background-color: blue;
+    padding: 10px;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(134, 211, 241);
+    color: black;
+  }
+  
+  /* Highlight Selected Service */
+  .selected {
+    background-color: darkblue !important;
+  }
+  
+  /* Request Form */
+  .request-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .request-form label {
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .request-form input, .request-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Submitted Requests */
+  .submitted-requests {
+    margin-top: 20px;
+  }
+  
+  .request-item {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 4px;
+  }
+  
+  

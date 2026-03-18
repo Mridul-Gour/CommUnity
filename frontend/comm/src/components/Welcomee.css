@@ -1,0 +1,8 @@
+.wel{
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    display: flex;
+}

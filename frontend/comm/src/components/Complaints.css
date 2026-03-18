@@ -1,0 +1,94 @@
+.complaints-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Complaint Summary */
+  .complaint-summary {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .summary-box {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white;
+  }
+  
+  .solved {
+    background-color: rgb(146, 123, 248);
+  }
+  
+  .unsolved {
+    background-color: rgb(199, 141, 204);
+  }
+  
+  .summary-box:first-child {
+    background-color: rgb(121, 121, 187);
+  }
+  
+  /* Ad Section */
+  .ad-section {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .ad-box {
+    flex: 1;
+    background-color: rgb(150, 211, 142);
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  /* Complaint Form */
+  .complaint-form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .complaint-form h2 {
+    margin-bottom: 15px;
+  }
+  
+  .complaint-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .complaint-form label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  
+  .complaint-form input,
+  .complaint-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .complaint-form button {
+    background: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .complaint-form button:hover {
+    background: darkblue;
+  }
+  

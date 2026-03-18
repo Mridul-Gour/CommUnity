@@ -1,0 +1,56 @@
+.signupf_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    width: 100%;
+    color: blue;
+}
+
+.signupf_img img{
+    width: 800px;
+    height: 600px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.signupf_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupf_form input{
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 300px;
+    
+}
+
+.signupf_form img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.signupf_form button{
+    padding: 10px 25px;
+    margin-top: 25px;
+    background-color: rgb(22, 89, 214);
+    color: wheat;
+    border: none;
+    border-radius: 10px ;
+    font-size: 15px;
+}
+
+.signupf_form button:hover{
+    background-color: rgb(75, 84, 165);
+}
+
+h3{
+    color: blue;
+    font-size: 40px;
+}

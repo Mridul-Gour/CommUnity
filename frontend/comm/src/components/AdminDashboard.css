@@ -1,0 +1,93 @@
+/* Admin Dashboard Main Container */
+.admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+/* Complaint Summary Section */
+.complaint-summary {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.summary-box {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    width: 150px;
+    color: white;
+}
+
+.total { background-color: #007bff; }   /* Blue */
+.solved { background-color: #28a745; }  /* Green */
+.unsolved { background-color: #cf7a82; } /* Red */
+
+/* Complaints Table */
+.complaints-table {
+    width: 90%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.complaints-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.complaints-table th, 
+.complaints-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.complaints-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.complaints-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.complaints-table button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.solve-btn { background-color: #28a745; color: white; }
+.delete-btn { background-color: #dc3545; color: white; }
+.solve-btn:hover, .delete-btn:hover { opacity: 0.8; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .complaint-summary {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .summary-box {
+        width: 80%;
+    }
+
+    .complaints-table {
+        width: 100%;
+    }
+
+    .complaints-table th, 
+    .complaints-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

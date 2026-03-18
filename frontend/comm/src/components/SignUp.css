@@ -1,0 +1,93 @@
+
+.signup_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 70px;
+}
+
+.signup_img img{
+    width: 800px;
+    height: 600px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.signup_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(65, 65, 151);
+    max-width: 350px;
+    max-height: 70%;
+}
+
+.signup_form img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.signup_form h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+.signup_form input{
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.signup_form select{
+    padding: 8px;
+    width: 320px;
+}
+
+.signup_form label{
+    margin-bottom: 10px;
+}
+
+.signup_form button{
+    padding: 10px 25px;
+    margin-top: 25px;
+    background-color: rgb(18, 89, 221);
+    color: wheat;
+    border: none;
+    border-radius: 10px ;
+    font-size: 15px;
+}
+
+.signup_form a{
+    text-decoration: none;
+}
+
+.signup_form button:hover{
+    background-color: rgb(135, 143, 216);
+}
+
+.signup_form .error {
+    color: red; /* Make the error messages red */
+    font-size: 12px; /* Smaller font size for the errors */
+    margin-bottom: 10px; /* Add some space below the error messages */
+}
+
+
+/* Error message styles */
+.error {
+    color: red;         /* Red text color */
+    font-size: 1.9em;   /* Slightly smaller text size */
+    margin-top: 5px;    /* Space above the error message */
+    margin-bottom: 10px; /* Space below the error message */
+    padding: 0;         /* No padding */
+    display: block;     /* Makes sure the error is on its own line */
+}
+
+
+
+
